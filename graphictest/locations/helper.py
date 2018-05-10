@@ -60,7 +60,8 @@ class LocationsGraph(object):
                     if len(y1) == 1:
                         plt.plot(x, y1, 'bo')
                     else:
-                        plt.plot(x, y1, 'bo-')
+                        plt.plot(x, y1, 'b-')
+                    plt.grid(color="#777777", linestyle="--", linewidth=1)
                     plt.title('avg_resp_proxy')
                     plt.xlabel('dates')
                     plt.ylabel('milliseconds')
@@ -82,7 +83,8 @@ class LocationsGraph(object):
                     if len(y1) == 1:
                         plt.plot(x, y2, 'bo')
                     else:
-                        plt.plot(x, y2, 'bo-')
+                        plt.plot(x, y2, 'b-')
+                    plt.grid(color="#777777", linestyle="--", linewidth=1)
                     plt.title('avg_resp_direct')
                     plt.xlabel('dates')
                     plt.ylabel('milliseconds')
